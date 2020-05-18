@@ -16,8 +16,7 @@ public class MemberVariableRangeDemo {
 		int b = a+10;
 		
 		//id, a, b의 유효범위는 methodA에서만 사용가능
-		
-		
+
 	}
 	
 	public static void main(String[] args) {
