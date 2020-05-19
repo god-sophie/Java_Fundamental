@@ -71,33 +71,7 @@ public class Calendar {
 		}
 		return monthArray[month-1];
 	}
-		
-	public void print(int year, int month) {
-		System.out.println("일\t월\t화\t수\t목\t금\t토");
-		
-		//2020년 5월 1일 날짜를 구해서 일부터 1일 이전 날짜까지 빈공백 처리
-		
-		int totalCount = getCount(year,month,1);
-		int rest = totalCount % 7;
-		
-		for(int i=0;i<rest;i++) {
-			System.out.print("\t");
-		}
-		
-		for(int i=1;i<=getLastDay(year,month);i++) {
-			System.out.print(i+"\t");
-			rest++;
-			if(rest%7==0) {
-				System.out.println();
-			}
-		}
-		System.out.println();
-	}
-	public void print(int year) {
-		for(int i=1;i<=12;i++) {
-			print(year, i);
-		}
-	}
+	
 	public void print(int year, int month, int day) {
 		
 		int totalCount = getCount(year, month, day);
@@ -124,6 +98,34 @@ public class Calendar {
 		System.out.println(year+"년 "+month+"월 "+day+" 일은 "+
 		message+" 입니다.");
 	}
+	
+	public void print(int year, int month) {
+		System.out.println("일\t월\t화\t수\t목\t금\t토");
+		
+		//2020년 5월 1일 날짜를 구해서 일부터 1일 이전 날짜까지 빈공백 처리
+		
+		int totalCount = getCount(year,month,1);
+		int rest = totalCount % 7;
+		
+		for(int i=0;i<rest;i++) {
+			System.out.print("\t");
+		}
+		
+		for(int i=1;i<=getLastDay(year,month);i++) {
+			System.out.print(i+"\t");
+			rest++;
+			if(rest%7==0) {
+				System.out.println();
+			}
+		}
+		System.out.println();
+	}
+	public void print(int year) {
+		for(int i=1;i<=12;i++) {
+			print(year, i);
+		}
+	}
+
 	
 	
 }
