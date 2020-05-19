@@ -9,9 +9,11 @@ public class ChildDemo {
 		
 		System.out.println(p.money);
 		
+		
 		Child c = new Child();
 		c.money = 1_000_000_000;
-		c.chicken = "bbq";
+		c.setParentMoeny(1_000_000);
+		c.chicken = "교촌통닭";
 		c.gotoSchool();
 		c.makeMoney();
 		c.play("omok");
@@ -19,6 +21,6 @@ public class ChildDemo {
 		System.out.println(c.money);
 		System.out.println(c.getParentMoney());
 		System.out.println(c.chicken);
-
+		
 	}
 }

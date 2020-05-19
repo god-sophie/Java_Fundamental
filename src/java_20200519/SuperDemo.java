@@ -8,10 +8,25 @@ public class SuperDemo extends Object {
 	}
 }
 
-class A {
-	
+class A{
+	A(int a){
+		
+	}
+	A(){
+		
+	}
 }
 
 class B extends A{
 	
 }
+
+
+/*
+class A {
+	
+}
+class B extends A{
+	
+}
+*/
