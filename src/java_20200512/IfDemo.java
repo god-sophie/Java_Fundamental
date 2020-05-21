@@ -2,7 +2,7 @@ package java_20200512;
 
 public class IfDemo {
 	public static void main(String[] args) {
-		// Run Configuration => Arguments => Program arguments
+		// Run표시에서 Run Configuration => Arguments => Program arguments
 		int month = Integer.parseInt(args[0]);
 		
 		String season = null;
